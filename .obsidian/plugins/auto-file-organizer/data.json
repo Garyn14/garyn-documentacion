@@ -1,0 +1,15 @@
+{
+  "tagEnabled": false,
+  "extensionEnabled": true,
+  "priority": "tag",
+  "extensionMapping": {
+    "png": "Kadector/img",
+    "md": "Seguimiento de UUID"
+  },
+  "tagMapping": {
+    "#excalidraw": "Seguimiento de UUID"
+  },
+  "extensionBlackList": {},
+  "extensionFolderBlackList": {},
+  "tagBlackList": {}
+}

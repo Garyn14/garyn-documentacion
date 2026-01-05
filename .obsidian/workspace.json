@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "98e4f84f24a3a066",
+        "id": "f1a9b0af84d9232b",
         "type": "tabs",
         "children": [
           {
-            "id": "ae23afcd7ccd939a",
+            "id": "7652ff0cb19fd9f2",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -191,19 +191,31 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ae23afcd7ccd939a",
+  "active": "ef94fe75bdc94007",
   "lastOpenFiles": [
-    "Kadector/CRM/Untitled.md",
-    "Kadector/CRM/seguimiento web.md",
-    "index 1.html",
-    "index.html",
+    "Kadector/Seguimiento de UUID/seguimientoUUID.html",
+    "seguimientoUUID.html",
+    "Kadector/img/Pasted Image 20260105124551_536.png",
+    "Kadector/img/Pasted Image 20260105124030_160.png",
+    "Kadector/img/Pasted Image 20260105123714_284.png",
+    "Kadector/img/Pasted Image 20260105123518_251.png",
+    "Kadector/img",
+    "code.html",
+    "DefaultFolder",
+    "DefaultFolder/code.html",
+    "Kadector/Seguimiento de UUID/index.html",
+    "DefaultFolder/index.html",
+    "DefaultFolder/index.html",
+    "Seguimiento de UUID",
+    "Kadector/Seguimiento de UUID/img/Pasted Image 20260105124551_536.png",
+    "Seguimiento de UUID/Untitled.md",
+    "Kadector/Seguimiento de UUID/img/Pasted Image 20260105124030_160.png",
+    "Kadector/Seguimiento de UUID/img/Pasted Image 20260105123518_251.png",
+    "Kadector/Seguimiento de UUID/img",
     "Welcome.md",
-    "Pasted Image 20260105124551_536.png",
-    "Pasted Image 20260105124030_160.png",
-    "Pasted Image 20260105123714_284.png",
-    "Pasted Image 20260105123518_251.png",
-    "Kadector/CRM",
-    "Untitled",
-    "Kadector"
+    "Kadector/Seguimiento de UUID/logica.md",
+    "Kadector/Seguimiento de UUID/explicación código.md",
+    "Kadector/CRM/Untitled.md",
+    "Kadector/Seguimiento de UUID/img/Pasted Image 20260105123714_284.png"
   ]
 }
