@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "bc0eec4eb807902f",
+        "id": "98e4f84f24a3a066",
         "type": "tabs",
         "children": [
           {
-            "id": "a45abe133612faf1",
+            "id": "ae23afcd7ccd939a",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -90,6 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Kadector/CRM/seguimiento web.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +100,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for seguimiento web"
             }
           },
           {
@@ -108,11 +109,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Kadector/CRM/seguimiento web.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from seguimiento web"
             }
           },
           {
@@ -150,12 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "Kadector/CRM/seguimiento web.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of seguimiento web"
             }
           },
           {
@@ -173,7 +176,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 357.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -188,12 +191,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a45abe133612faf1",
+  "active": "ae23afcd7ccd939a",
   "lastOpenFiles": [
+    "Kadector/CRM/Untitled.md",
     "Kadector/CRM/seguimiento web.md",
+    "index 1.html",
+    "index.html",
+    "Welcome.md",
+    "Pasted Image 20260105124551_536.png",
+    "Pasted Image 20260105124030_160.png",
+    "Pasted Image 20260105123714_284.png",
+    "Pasted Image 20260105123518_251.png",
     "Kadector/CRM",
     "Untitled",
-    "Kadector",
-    "Welcome.md"
+    "Kadector"
   ]
 }
