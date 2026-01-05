@@ -6,6 +6,7 @@
     <title>Document</title>
 
     <script>
+      // --- 1. DEFINICIÓN DE LA MÁQUINA ---
       class MaquinaEsteganografica {
         constructor() {
           this.bitToChar = { 0: "\u200c", 1: "\u200d" };
@@ -35,7 +36,7 @@
             }
             return mensajeBase + " " + invisiblePayload;
           } catch (e) {
-            return mensajeBase;
+            return mensajeBase; // Retorno seguro si el UUID falla
           }
         }
 
@@ -74,6 +75,7 @@
         }
       }
 
+      // --- 2. LÓGICA DE VISITA (TU CÓDIGO ORIGINAL) ---
       (function () {
         function getCookie(name) {
           const value = `; ${document.cookie}`;
@@ -121,18 +123,12 @@
           timestamp: new Date().toISOString(),
         };
 
-        fetch("https://n8n.kadector.pe/webhook/web_landing_visit", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(payload),
-          keepalive: true,
-          mode: "cors",
-        }).catch((err) => console.error("Error enviando evento:", err));
       })();
 
+      // --- 3. LÓGICA DE CLIC (CON MÁQUINA INTEGRADA) ---
       (function () {
         console.log("SCRIPT TRACKING INICIADO");
-        const maquina = new MaquinaEsteganografica();
+        const maquina = new MaquinaEsteganografica(); // Instancia de la máquina
 
         function getCookie(name) {
           const value = `; ${document.cookie}`;
@@ -156,16 +152,18 @@
             e.stopPropagation();
             e.stopImmediatePropagation();
 
+            // Usamos la cookie para obtener el ID real
             const lead_id = getCookie("kdx_lead_id") || "no-lead-id";
 
+            // --- PROCESO DE CODIFICACIÓN INVISIBLE ---
             let urlObj = new URL(href);
             let urlParams = new URLSearchParams(urlObj.search);
             let textoOriginal = urlParams.get("text") || "Hola";
 
-            // codificar UUID
+            // La máquina hace su magia aquí
             let textoConIdInvisible = maquina.codificar(textoOriginal, lead_id);
 
-            // Inyeción de texto
+            // Inyectamos el texto codificado de nuevo en la URL
             urlParams.set("text", textoConIdInvisible);
             urlObj.search = urlParams.toString();
             const linkFinalCifrado = urlObj.toString();
@@ -180,17 +178,6 @@
 
             console.log("Payload:", JSON.stringify(payload, null, 2));
 
-            navigator.sendBeacon(
-              "https://n8n.kadector.pe/webhook/web_cta_click",
-              new Blob([JSON.stringify(payload)], { type: "application/json" })
-            );
-
-            fetch("https://n8n.kadector.pe/webhook/web_cta_click", {
-              method: "POST",
-              headers: { "Content-Type": "application/json" },
-              body: JSON.stringify(payload),
-              keepalive: true,
-            }).catch((error) => console.error("Error fetch:", error));
 
             setTimeout(() => {
               console.log("Abriendo WhatsApp Cifrado...");
